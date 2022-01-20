@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import formatedDate from "./formatedDate";
 import "./Weather.css";
+import weatherInfo from "./weatherInfo";
 
 export default function Weather(props) {
   const [ready, setReady] = useState({ ready: false });
@@ -44,6 +45,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
+        <weatherInfo />
         <h1>{weatherData.city}</h1>
         <ul>
           <li>
@@ -56,7 +58,9 @@ export default function Weather(props) {
             <div className="clearfix">
               <img src={weatherData.iconUrl} alt="Mostly cloudy" />
 
-              <span className="temperature">{Math.round(temperature)}</span>
+              <span className="temperature">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="unit">°F</span>
             </div>
           </div>
