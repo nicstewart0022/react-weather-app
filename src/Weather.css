@@ -1,10 +1,13 @@
+body {
+  background-color: #474744;
+}
 .Weather {
   border: 1px solid #000;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
   padding: 16px;
   border-radius: 4px;
-  background-color: #474744;
+  background-color: #fffbe0;
 }
 .Weather form {
   margin-bottom: 20px;
@@ -19,7 +22,7 @@
 .Weather ul {
   margin: 0;
   padding: 0;
-  color: #fffbe0;
+  color: #474744;
 }
 .Weather li {
   font-size: 16px;
@@ -53,10 +56,13 @@
   border-radius: 3px;
   padding: 5px 10px;
 }
-.Weather a {
+a {
   color: #ffb400;
   text-decoration: none;
 }
-.Weather a:hover {
+a:hover {
+  color: #fffbe0;
+}
+footer {
   color: #fffbe0;
 }
